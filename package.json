@@ -1,41 +1,31 @@
 {
-  "name": "mangocherrypie",
+  "name": "mongo-scraper",
   "version": "1.0.0",
-  "description": "Mongoose and Cheerio muscles to scrape news from another site.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+  "description": "A web scraping app that uses mongo for storage",
+  "main": "server.js",
+  "author": "Marco Principio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m081779/mongo-scraper/issues"
   },
-  "engines": {
-    "node": "10.6.0",
-    "npm": "6.2.0"
+  "homepage": "https://github.com/m081779/mongo-scraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.0.0-rc2",
+    "morgan": "^1.9.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "serve-favicon": "^2.4.5"
+  },
+  "scripts": {
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maomaoyulin/MangoCherryPie.git"
+    "url": "git+https://github.com/m081779/mongo-scraper.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/maomaoyulin/MangoCherryPie/issues"
-  },
-  "homepage": "https://github.com/maomaoyulin/MangoCherryPie#readme",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.3",
-    "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "heroku": "^7.7.6",
-    "mongoose": "^5.2.5",
-    "morgan": "^1.9.0",
-    "path": "^0.12.7",
-    "request": "^2.87.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.3"
-  }
+  "devDependencies": {}
 }
